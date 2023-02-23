@@ -14,21 +14,27 @@ window.addEventListener("load", function () {
 });
 
 
-//declaração de variáveis
-    var btn_gerar = document.getElementById('button');
-    var content = document.getElementById('textInput');
-    var script = document.getElementById('scriptGerado');
+    //declaração de variáveis
+    var btn_gerar = document.getElementById('btGerar');
+    var content = document.getElementById('textwraper');
+    var scripts = document.getElementById('scriptGerado');
+    var section = document.getElementById('textInput');
+    var button = document.getElementById('button');
 
-//botão de gerar
+    //botão de gerar
     btn_gerar.addEventListener("click", gerar);
 
-//funções
+    //funções
     function gerar(){
-    //omitir tela e gerar html
-        var content_html = document.getElementById('textarea_hmtl').innerHTML;
-        var content_js = document.getElementById('textarea_js').innerHTML;
+    var content_html = document.getElementById('textarea_html');
+    var content_js = document.getElementById('textarea_js');
 
-        content.style.display = "none";
-        document.body.innerHTML = content_html;
-        document.script.innerHTML = content_js;
-    }
+    section.style.display = "none";
+    button.style.display = "none";
+    //escrita do conteúdo
+    content = content_html;
+    scripts = content_js;
+    //omitir tela e gerar html
+    console.log(content)
+    console.log(scripts)
+}
