@@ -28,14 +28,14 @@ window.addEventListener("load", function () {
 
     //funções
     function gerar(){
-    var content_html = document.getElementById('textarea_html');
-    var content_js = document.getElementById('textarea_js');
+    var content_html = document.getElementById('textarea_html').value;
+    var content_js = document.getElementById('textarea_js').value;
 
     section.style.display = "none";
     button.style.display = "none";
     //escrita do conteúdo
-    content = content_html;
-    scripts = content_js;
+    content.innerHTML = content_html;
+    scripts.innerText = content_js;
     //omitir tela e gerar html
     console.log(content)
     console.log(scripts)
