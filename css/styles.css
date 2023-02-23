@@ -119,7 +119,7 @@ textarea:hover{
 #button{
     display: flex;
     justify-content: center;
-
+    padding-bottom: 20px;
 }
 #btGerar{
     width: 200px;
@@ -141,14 +141,12 @@ textarea:hover{
 #btGerar:hover{
     transform: scale(110%);
     color: white;
-    background-image: url("/img/Massive-Galaxy.gif");
-
 }
 footer {
     display: flex;
     background: var(--footer);
     height: 50px;
-    margin-top: 2%;
+    margin-top: 1%;
     flex-direction: row;
     justify-content: center;
 
