@@ -54,3 +54,100 @@ footer p{
     
 
 }
+/*Adição da fonte Montserrat ao programa */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+:root {
+    --fundo: linear-gradient(241.03deg, rgba(187, 178, 178, 0) 0%, #4A4747 38.91%, #1B1A1A 100.44%);
+    --textarea:  #D9D9D9;;
+    --textareabottom: white;
+    --texto: white;
+    --botao: linear-gradient(257.91deg,#c366ff 17.54%,#d37fc8 54.55%,#e95582 72.93%);
+    --textbotao: white;
+}
+.white-mode:root {
+    --fundo: linear-gradient(249.03deg, #FFFFFF 7.43%, rgba(255, 255, 255, 0.802083) 77%, rgba(251, 244, 244, 0.568142));
+    --textarea: rgba(143, 146, 148, 0.49);
+    --textareabottom:#4C737B;
+    --texto: black;
+    --botao: linear-gradient(260.02deg,#a6c3e4 -4.36%,#3f87dd -4.35%,#7db1ef 45.09%,#86bcfc 59.75%);
+    --textbotao: #291854;
+}
+main{
+    background: var(--fundo)
+
+}
+#textInput{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 70px;
+}
+.texthtml{
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+.texthtml h1{
+    text-align: center; 
+    font-size: 25px;
+    color: var(--textareabottom);
+}
+.textjs{
+    color: var(--texto);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.textjs h1{
+    text-align: center; 
+    font-size: 25px;
+    color: var(--textareabottom);
+
+}
+textarea{
+    background: var(--textarea);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    resize: none;
+    overflow: auto;
+    padding: 15px;
+    width: 400px;
+    min-height:350px;
+    
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+#btGerar{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background: var(--botao);
+    color: var(--textbotao);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 3%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+#btGerar:hover{
+    transform: scale(110%);
+}
