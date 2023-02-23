@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
 
     //declaração de variáveis
     var btn_gerar = document.getElementById('btGerar');
-    var content = document.getElementById('main').innerHTML;
+    var content = document.getElementById('textwraper');
     var scripts = document.getElementById('scriptGerado');
     var section = document.getElementById('textInput');
     var button = document.getElementById('button');
@@ -26,8 +26,8 @@ window.addEventListener("load", function () {
 
     //funções
     function gerar(){
-    var content_html = document.getElementById('textarea_html').value;
-    var content_js = document.getElementById('textarea_js').value;
+    var content_html = document.getElementById('textarea_html');
+    var content_js = document.getElementById('textarea_js');
 
     section.style.display = "none";
     button.style.display = "none";
