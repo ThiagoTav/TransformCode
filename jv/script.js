@@ -7,7 +7,7 @@ var horas = data.getHours();
 console.log(horas);
 
 window.addEventListener("load", function () {
-  if (horas > 18) {
+  if (horas < 18) {
     html.classList.toggle("white-mode");
     body.classList.toggle("white-mode");
   }
@@ -23,9 +23,7 @@ window.addEventListener("load", function () {
 
     //botão de gerar
     btn_gerar.addEventListener("click", gerar);
-   
-    //
-
+  
     //funções
     function gerar(){
     var content_html = document.getElementById('textarea_html').value;
