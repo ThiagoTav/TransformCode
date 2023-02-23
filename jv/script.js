@@ -6,3 +6,4 @@ var btn_gerar = document.getElementById("button")
 //botão de gerar
 btn_gerar.addEventListener("click", gerar);
 
+//métodos
