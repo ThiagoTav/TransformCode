@@ -13,7 +13,6 @@ window.addEventListener("load", function () {
   }
 });
 
-
     //declaração de variáveis
     var btn_gerar = document.getElementById('btGerar');
     var content = document.getElementById('textwraper');
@@ -28,26 +27,24 @@ window.addEventListener("load", function () {
     function gerar(){
     let content_html = document.getElementById('textarea_html').value;
     let content_js = document.getElementById('textarea_js').value;
-      
-    section.style.display = "none";
-
+    
+    //Omitir o página 1
+    page1.style.display = "none";
 
     //escrita do conteúdo
     content.innerHTML = content_html;
 
+    //Mudar o link com CSS
+    document.getElementById('link').setAttribute("href", "./css/stylePagina2.css");
+
     //gerar script a partir do js do usuário
-  
     var tagScript = document.createElement("script")
     tagScript.setAttribute("type", "text/javascript")
-
     var textScript = document.createTextNode(content_js)
-
     tagScript.appendChild(textScript)
     document.body.appendChild(tagScript)
+
     //omitir tela e gerar html
     console.log(content)
     console.log(scripts)
-    
-    
-
 }
