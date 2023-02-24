@@ -13,27 +13,30 @@ window.addEventListener("load", function () { //Lógica LEITURA
 
 //declaração de variáveis
 var btn_gerar = document.getElementById('btGerar');
-var content = document.getElementById('page2');
+var btn_voltar = document.getElementById('btVoltar');
+var page2 = document.getElementById('page2');
+var content_user = document.getElementById('content');
 var section = document.getElementById('textInput');
 var page1= document.getElementById('page1');
 
-//Ocultar page2(content)
-content.style.display = "none";
+//Ocultar page2 quando a tela carregar
+page2.style.display = "none";
 
-//Monitoramento do botão gerar
+//Monitoramento dos botões
 btn_gerar.addEventListener("click", gerar);
+btn_voltar.addEventListener("click", retornar);
 
-//função
+//funções
 function gerar(){
 let content_html = document.getElementById('textarea_html').value;
 let content_js = document.getElementById('textarea_js').value;
 
 //Omitir a page1 e exibir page2
 page1.style.display = "none";
-content.style.display = "flex";
+page2.style.display = "flex";
 
 //escrita do conteúdo HTML
-content.innerHTML = content_html;
+content_user.innerHTML = content_html;
 
 //Mudar o link com CSS
 document.getElementById('link').setAttribute("href", "./css/stylePagina2.css");
@@ -48,5 +51,18 @@ document.body.appendChild(tagScript)
 //teste console
 console.log(content)
 console.log(scripts)
+}
+
+//Função do botão voltar 
+function retornar(){
+
+  //Mudar o link com CSS
+  document.getElementById('link').setAttribute("href", "./css/styles.css");
+  //Ocultar page 2
+  page2.style.display = "none";
+  //Mostra page1
+  page1.style.display = "flex";
+  
+
 }
 

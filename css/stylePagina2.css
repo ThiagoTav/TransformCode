@@ -37,6 +37,16 @@
   --input-fundo: white;
   --peso: 500;
 }
+#btVoltar{
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 100px;
+  transition: 0.3s;
+}
+#btVoltar:hover{
+  color: black;
+}
 body{
   display: flex;
   justify-content: center;
@@ -129,7 +139,7 @@ main{
   cursor: pointer;
 
 }
-#btnCalcular:hover {
+#btnCalcular,button:hover{
   transform: scale(110%);
 }
 #btnSomar,
