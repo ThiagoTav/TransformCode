@@ -77,7 +77,6 @@ header h2 {
 header h2:hover{
     transform: scale(110%);
 }
-
 .btn{
     width: 70px;
     height: 30px;
@@ -88,7 +87,6 @@ header h2:hover{
     left: 10%;
     top: 45%;
 }
-
 .btn:before{
     content: '';
     position: absolute;
@@ -100,12 +98,18 @@ header h2:hover{
     left: 1.5px;
     transform: translateY(-10px);
 }
-
 .btn.active:root:before{
     left: 115px;
 }
-
-
+#introducao{
+    padding-top: 5%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 #textInput{
     padding-top: 5%;
     display: flex;

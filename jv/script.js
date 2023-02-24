@@ -10,7 +10,7 @@ btn.onclick = function(){
 
 //declaração de variáveis
 var btn_gerar = document.getElementById('btGerar');
-var btn_voltar = document.getElementById('btVoltar');
+var btn_voltar = document.getElementById('btVoltarDefault');
 var page2 = document.getElementById('page2');
 var content_user = document.getElementById('content');
 var section = document.getElementById('textInput');
