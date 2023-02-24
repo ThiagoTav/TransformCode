@@ -33,7 +33,7 @@
 body{
     background: var(--fundo); 
 }
-#header img{
+header img{
     display: flex;
     padding: 1%;
     margin-left: 4%;
@@ -41,7 +41,7 @@ body{
     height: 100px;
     cursor: pointer;
 }
-#header {
+header {
     display: flex;
     background: var(--header);
     box-shadow: var(--headershadow);
@@ -49,7 +49,7 @@ body{
     height: 120px;
     transition: 0.2s;
 }
-#header h1 {
+header h1 {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -58,7 +58,7 @@ body{
     font-size: 40px;
     color: var(--texth1); 
 }
-#header h2 {
+header h2 {
     display: flex;
     color: var(--texto);
     padding-top: 10px;
@@ -110,10 +110,10 @@ textarea{
     width: 400px;
     min-height:400px;
     transition: 0.2s;
-
 }
 textarea:hover{
     transform: scale(110%);
+    box-shadow:  5px 7px 4px rgba(13, 2, 32, 0.559);;
 }
 #button{
     display: flex;
@@ -141,7 +141,7 @@ textarea:hover{
     transform: scale(110%);
     color: white;
 }
-#footer {
+footer {
     display: flex;
     background: var(--footer);
     height: 50px;
@@ -150,8 +150,9 @@ textarea:hover{
     justify-content: center;
 
 }
-#footer p{
+footer p{
     display: flex;
     color: var(--texto);
     padding-top: 20px;
+  
 }
