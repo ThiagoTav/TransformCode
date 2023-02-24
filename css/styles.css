@@ -65,7 +65,6 @@ body{
     margin-left: 220px;
     font-size: 22px;
 }
-
 #textInput{
     padding-top: 7%;
     display: flex;
@@ -142,7 +141,7 @@ textarea:hover{
     transform: scale(110%);
     color: white;
 }
-footer {
+#footer {
     display: flex;
     background: var(--footer);
     height: 50px;
@@ -151,7 +150,7 @@ footer {
     justify-content: center;
 
 }
-footer p{
+#footer p{
     display: flex;
     color: var(--texto);
     padding-top: 20px;

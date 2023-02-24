@@ -3,9 +3,9 @@ const html = document.querySelector("html");
 const body = document.querySelector("body");
 var data = new Date();
 var horas = data.getHours();
-
 console.log(horas);
 
+//Lógica LEITURA
 window.addEventListener("load", function () {
   if (horas < 18) {
     html.classList.toggle("white-mode");
@@ -15,11 +15,12 @@ window.addEventListener("load", function () {
 
     //declaração de variáveis
     var btn_gerar = document.getElementById('btGerar');
-    var content = document.getElementById('textwraper');
+    var content = document.getElementById('page2');
     var section = document.getElementById('textInput');
     var page1= document.getElementById('page1');
     
-
+    //Ocultar page2(content)
+    content.style.display = "none";
     //botão de gerar
     btn_gerar.addEventListener("click", gerar);
   
@@ -28,8 +29,10 @@ window.addEventListener("load", function () {
     let content_html = document.getElementById('textarea_html').value;
     let content_js = document.getElementById('textarea_js').value;
     
-    //Omitir o página 1
+    //Omitir o página 1 e exibir page2
     page1.style.display = "none";
+    content.style.display = "flex";
+
 
     //escrita do conteúdo
     content.innerHTML = content_html;

@@ -20,7 +20,7 @@
   );
   --botaoTxt: white;
   --input-fundo: white;
-  --peso: 300;
+  --peso: 500;
 }
 
 .white-mode:root {
@@ -37,14 +37,16 @@
   --input-fundo: white;
   --peso: 500;
 }
-body {
+body{
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--fundo);
   color: var(--texto);
+  min-height: 100vh;
+  height: auto;
 }
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,40 +54,22 @@ main {
   width: 800px;
   min-height: 500px;
   height: auto;
+  margin-bottom: 20px;
   box-shadow: 0px 0px 14px -3px black;
   border-radius: 15px;
 }
-input {
-  text-align: center;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 700px;
-  height: 200px;
-}
-.titulo h1 {
+h1 {
   width: 600px;
   text-align: left;
   font-size: 28px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.titulo p b:nth-child(1) {
-  font-size: 20px;
-}
-.titulo b {
-  font-weight: bold;
-}
-.titulo p {
+p {
   word-break: normal;
   text-align: justify;
   font-size: 18px;
   line-height: 25px;
-}
-.inputOutput {
-  display: flex;
-  flex-direction: column;
 }
 input {
   background: var(--input-fundo);
@@ -93,23 +77,18 @@ input {
   width: 100px;
   height: 40px;
   border-style: none;
+  text-align: center; 
+  margin-top: 20px;
 }
-.Input {
+main{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2%;
   gap: 30px;
+  margin-top: 10px;
 }
-.Input p{
-  padding-top: 10px;
+.main p{
   font-weight: 700;
-}
-.output{
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
 }
 #result {
   padding: 10px;
@@ -126,34 +105,29 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin-top: 30px;
+  align-self: center;
+
 }
 #btnCalcular {
-  width: 140px;
-  height: 60px;
+  width: 120px;
+  height: 40px;
   display: flex;
+  align-items: center;
   justify-content: center;
   font-size: 1rem;
-  align-items: center;
   background: var(--botao);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  margin-top: 5%;
   transition: 0.2s;
   color: white;
   font-weight: 500;
-  align-items: center;
-  font-size: 1.3rem;
   cursor: pointer;
+  margin-top: 20px;
 }
 #btnCalcular:hover {
   transform: scale(110%);
 }
-
 #btnSomar,
 #btnSub,
 #btnMult,
@@ -177,10 +151,16 @@ input {
   text-align: center;
   cursor: pointer;
 }
-
 #btnSomar:hover,
 #btnSub:hover,
 #btnMult:hover,
 #btnDiv:hover {
   transform: scale(110%);
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  gap: 30px;
 }
