@@ -52,7 +52,7 @@ body{
   justify-content: center;
   padding: 50px;
   width: 800px;
-  min-height: 500px;
+  min-height: 450px;
   height: auto;
   margin-bottom: 20px;
   box-shadow: 0px 0px 14px -3px black;
@@ -65,11 +65,17 @@ h1 {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-p {
+p{
   word-break: normal;
   text-align: justify;
   font-size: 18px;
   line-height: 25px;
+}
+p b:nth-child(1) {
+  font-size: 20px;
+}
+b {
+  font-weight: bold;
 }
 input {
   background: var(--input-fundo);
@@ -78,14 +84,15 @@ input {
   height: 40px;
   border-style: none;
   text-align: center; 
-  margin-top: 20px;
+ 
 }
 main{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
+
 }
 #result {
   padding: 10px;
@@ -102,7 +109,6 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
   align-self: center;
 
 }
@@ -120,7 +126,7 @@ main{
   color: white;
   font-weight: 500;
   cursor: pointer;
-  margin-top: 20px;
+
 }
 #btnCalcular:hover {
   transform: scale(110%);
