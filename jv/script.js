@@ -19,7 +19,8 @@ window.addEventListener("load", function () {
     var content = document.getElementById('textwraper');
     var scripts = document.getElementById('scriptGerado');
     var section = document.getElementById('textInput');
-    var button = document.getElementById('button');
+    var page1= document.getElementById('page1');
+    
 
     //botão de gerar
     btn_gerar.addEventListener("click", gerar);
@@ -29,12 +30,18 @@ window.addEventListener("load", function () {
     var content_html = document.getElementById('textarea_html').value;
     var content_js = document.getElementById('textarea_js').value;
 
-    section.style.display = "none";
-    button.style.display = "none";
+    //Trocar o css
+    document.getElementById('link').setAttribute("href", "./css/stylePagina2.css");
+    
+    //Omitir fase 1 
+    page1.style.display = "none";
     //escrita do conteúdo
     content.innerHTML = content_html;
-    scripts.innerText = content_js;
-    //omitir tela e gerar html
+    scripts.innerHTML = content_js;
+
     console.log(content)
     console.log(scripts)
+    
+    
+
 }
