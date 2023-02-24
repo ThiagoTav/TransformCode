@@ -1,15 +1,12 @@
 //Lógica Black and White
 const html = document.querySelector("html");
 const body = document.querySelector("body");
-var data = new Date();
-var horas = data.getHours();
-console.log(horas);
-window.addEventListener("load", function () { //Lógica LEITURA
-  if (horas < 18) {
-    html.classList.toggle("white-mode");
-    body.classList.toggle("white-mode");
-  }
-});
+const btn = document.getElementById('darkMode')
+
+btn.onclick = function(){
+  html.classList.toggle('active')
+  body.classList.toggle('active')
+}
 
 //declaração de variáveis
 var btn_gerar = document.getElementById('btGerar');
