@@ -12,10 +12,11 @@
     --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
     --textarea:  #D9D9D9;;
     --textareabottom: white;
-    --textareahover: 5px 7px 15px rgba(169, 74, 216, 0.559);
+    --textareahover: 5px 7px 15px rgba(156, 48, 166, 0.559);
     --texto: white;
     --texth1: rgb(249, 249, 249);
     --botao: linear-gradient(257.91deg,#c366ff 17.54%,#d37fc8 54.55%,#e95582 72.93%);
+    --efeitobotao: url(/img/botãoBlack.gif);
     --textbotao: white;
     --footer:  linear-gradient(180.09deg, rgba(108, 70, 131, 0) 0.93%, #C366FF 150.53%);
 }
@@ -29,6 +30,7 @@
     --texto: black;
     --texth1:  #290A81 ;
     --botao: linear-gradient(260.02deg,#b4c7dd -4.36%,#3f87dd -4.35%,#83b6f4 45.09%,#86bcfc 59.75%);
+    --efeitobotao: url(/img/Massive-Galaxy.gif);
     --textbotao: #291854;
     --footer: linear-gradient(180.09deg, rgba(127, 163, 197, 0) 0.93%,  rgba(93, 166, 251, 0.60) 150.53%);
 }
@@ -147,7 +149,7 @@ textarea:hover{
 #btGerar:hover{
     transform: scale(110%);
     color: white;
-    background-image: url(/img/Massive-Galaxy.gif);
+    background-image: var(--efeitobotao);
 }
 footer {
     display: flex;
