@@ -17,9 +17,7 @@ window.addEventListener("load", function () {
     //declaração de variáveis
     var btn_gerar = document.getElementById('btGerar');
     var content = document.getElementById('textwraper');
-    var scripts = document.getElementById('scriptGerado');
     var section = document.getElementById('textInput');
-    var button = document.getElementById('button');
 
     //botão de gerar
     btn_gerar.addEventListener("click", gerar);
@@ -28,14 +26,24 @@ window.addEventListener("load", function () {
 
     //funções
     function gerar(){
-    var content_html = document.getElementById('textarea_html').value;
-    var content_js = document.getElementById('textarea_js').value;
-
+    let content_html = document.getElementById('textarea_html').value;
+    let content_js = document.getElementById('textarea_js').value;
+      
     section.style.display = "none";
-    button.style.display = "none";
+
+
     //escrita do conteúdo
     content.innerHTML = content_html;
-    scripts.innerText = content_js;
+
+    //gerar script a partir do js do usuário
+  
+    var tagScript = document.createElement("script")
+    tagScript.setAttribute("type", "text/javascript")
+
+    var textScript = document.createTextNode(content_js)
+
+    tagScript.appendChild(textScript)
+    document.body.appendChild(tagScript)
     //omitir tela e gerar html
     console.log(content)
     console.log(scripts)
