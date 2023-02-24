@@ -26,7 +26,7 @@
     --fundo:  linear-gradient(232.73deg, #fbfbfb 8.79%, #d8d4d4 90.88%);
     --textarea: #d8d9e0;
     --textareabottom:#4C737B;
-    --textareahover: 5px 7px 15px rgba(76, 115, 123, 1);
+    --textareahover: 5px 7px 20px #4C737B ;
     --texto: black;
     --texth1:  #290A81 ;
     --botao: linear-gradient(260.02deg,#b4c7dd -4.36%,#3f87dd -4.35%,#83b6f4 45.09%,#86bcfc 59.75%);
