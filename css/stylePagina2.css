@@ -87,9 +87,6 @@ main{
   gap: 30px;
   margin-top: 10px;
 }
-.main p{
-  font-weight: 700;
-}
 #result {
   padding: 10px;
   background-color: var(--input-fundo);
@@ -109,7 +106,7 @@ main{
   align-self: center;
 
 }
-#btnCalcular {
+#btnCalcular, button {
   width: 120px;
   height: 40px;
   display: flex;
