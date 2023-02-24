@@ -7,7 +7,7 @@ var horas = data.getHours();
 console.log(horas);
 
 window.addEventListener("load", function () {
-  if (horas > 18) {
+  if (horas < 18) {
     html.classList.toggle("white-mode");
     body.classList.toggle("white-mode");
   }
@@ -18,12 +18,12 @@ window.addEventListener("load", function () {
     var btn_gerar = document.getElementById('btGerar');
     var content = document.getElementById('textwraper');
     var section = document.getElementById('textInput');
+    var page1= document.getElementById('page1');
+    
 
     //botão de gerar
     btn_gerar.addEventListener("click", gerar);
-   
-    //
-
+  
     //funções
     function gerar(){
     let content_html = document.getElementById('textarea_html').value;
@@ -47,4 +47,7 @@ window.addEventListener("load", function () {
     //omitir tela e gerar html
     console.log(content)
     console.log(scripts)
+    
+    
+
 }

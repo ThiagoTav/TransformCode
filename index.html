@@ -5,60 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransformCode</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link id="link" rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header id="header">
-        <img src="./img/javascript-html5.png" alt="" height="60px">
-        <div class="texts">
-            <h1>TransformCode</h1>
-            <h2>Monte a sua Página Web estilizada!</h2>
-        </div>
-    </header>
-    <main id="main">
-        <section id="textwraper">
-
-        </section>
-        <section id="textInput">
-            <div class="texthtml">
-                <label for="textarea_html">
-                    1° Passo: <br>
-                    Insira aqui o conteúdo da <b>tag main</b> de seu código HTML 
-                </label>
-                <textarea name="textarea_html" id="textarea_html" cols="20" rows="20" 
-                placeholder=
-                    "<!--Exemplo: 
-                    <main>
-                        <label for='n1'>N1</label>
-                        <input type='text' name='n1' id='n1'>
-                        <button class='bt'>Calcular</button>
-                        <span id='result'>0</span>
-                    <main> -->"></textarea>
-                <h1> < html ></h1>
-            </div>
-            <div class="textjs">
-                <label for="textarea_js">
-                    2° Passo: <br>
-                    Insira aqui o conteúdo do seu código em JavaScript 
-                </label>
-                <textarea name="textarea_js" id="textarea_js" cols="20" rows="20"  
-                placeholder= 
-                "/*Exemplo 
-                var btCalcular = document.getElementbyID('bt')
-                addEventListener(“click”, calcular)
-                funcion calcular(){
-                var n1 =Number(document.getElementbyId('n1').value)
-                document.getElementbyId(“result”).innerText= n1 *2 ;} */"></textarea>
-                <h1> script</h1>
+    <section id="page1">
+        <section id="header">
+            <img src="./img/javascript-html5.png" alt="" height="60px">
+            <div class="texts">
+                <h1>TransformCode</h1>
+                <h2>Monte a sua Página Web estilizada!</h2>
             </div>
         </section>
-        <section id="button">
-            <input type="button" id="btGerar" value="Gerar Página!">
+        <section id="main">
+            <section id="textInput">
+                <div class="texthtml">
+                    <label for="textarea_html">
+                        1° Passo: <br>
+                        Insira aqui o conteúdo da <b>tag main</b> de seu código HTML 
+                    </label>
+                    <textarea name="textarea_html" id="textarea_html" cols="20" rows="20" 
+                    placeholder=
+                        "<!--Exemplo: 
+                        <main>
+                            <label for='n1'>N1</label>
+                            <input type='text' name='n1' id='n1'>
+                            <button class='bt'>Calcular</button>
+                            <span id='result'>0</span>
+                        <main> -->"></textarea>
+                    <h1> < html ></h1>
+                </div>
+                <div class="textjs">
+                    <label for="textarea_js">
+                        2° Passo: <br>
+                        Insira aqui o conteúdo do seu código em JavaScript 
+                    </label>
+                    <textarea name="textarea_js" id="textarea_js" cols="20" rows="20"  
+                    placeholder= 
+                    "/*Exemplo 
+                    var btCalcular = document.getElementbyID('bt')
+                    addEventListener(“click”, calcular)
+                    funcion calcular(){
+                    var n1 =Number(document.getElementbyId('n1').value)
+                    document.getElementbyId(“result”).innerText= n1 *2 ;} */"></textarea>
+                    <h1> script</h1>
+                </div>
+            </section>
+            <section id="button">
+                <input type="button" id="btGerar" value="Gerar Página!">
+            </section>
         </section>
+        <footer id="footer">
+            <p>Todos os direitos reservados - Site HTML5</p>
+        </footer>
+    </section>
+    <main id="textwraper">
+    
     </main>
-    <footer id="footer">
-        <p>Todos os direitos reservados - Site HTML5</p>
-    </footer>
+
+    
     
 </body>
 <script src="./jv/script.js"></script>
