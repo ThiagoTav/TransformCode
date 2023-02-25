@@ -117,9 +117,7 @@ header h2:hover{
     padding-bottom: 4%;
     transition: 0.3s;
 }
-.escrita:hover{
-    opacity: 0;
-}
+
 .li1{
     padding-left: 120px;
 }
@@ -130,12 +128,9 @@ header h2:hover{
     display: flex;
     justify-content: center;
     gap: 40px;
-    opacity: 0;
     transition: 0.3s;
 }
-.conteudo:hover{
-    opacity: 1;
-}
+
 .imagens{
     display: flex;
     flex-direction: column;
@@ -186,6 +181,11 @@ h2{
     color: white;
     line-height: 24px;
    
+}
+.botao{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 #textInput{
     padding-top: 5%;
