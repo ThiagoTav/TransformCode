@@ -77,9 +77,3 @@ function retornar(){
   
 
 }
-var btn2 = document.getElementById("btGerar2")
-btn2.addEventListener("click", barra)
-
-function barra(){
-  window.scroll(0,610)
-}
