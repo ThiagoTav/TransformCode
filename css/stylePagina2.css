@@ -37,7 +37,7 @@
   --input-fundo: white;
   --peso: 500;
 }
-#btVoltar{
+#btVoltarDefault{
   position: absolute;
   left: 15px;
   top: 10px;
@@ -45,7 +45,7 @@
   transition: 0.3s;
   border-radius: 0;
 }
-#btVoltar:hover{
+#btVoltarDefault:hover{
   color: black;
 }
 body{
@@ -106,7 +106,7 @@ main{
   margin-top: 20px;
   margin-bottom: 30px;
 }
-#result {
+#result,span {
   padding: 10px;
   background-color: var(--input-fundo);
   color: black;
