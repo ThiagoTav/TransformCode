@@ -22,7 +22,7 @@ page2.style.display = "none";
 
 //Monitoramento dos botões
 btn_gerar.addEventListener("click", gerar);
-btn_voltar.addEventListener("mouseover", linkar);
+
 btn_voltar.addEventListener("click", retornar);
 
 //funções
@@ -58,14 +58,11 @@ function retornar(){
   //Mudar o link com CSS
   document.getElementById('link').setAttribute("href", "./css/styles.css");
   //window.location.reload()
-  //Ocultar page 2
-  page2.style.display = "none";
   //Mostra page1
   page1.style.display = "flex";
+   //Ocultar page 2
+  page2.style.display = "none";
+  
+  
 
-}
-function linkar(){
-    //Forma mais avançada
-    let tagA = document.getElementById('a');
-    tagA.setAttribute("href","#textInput"); 
 }
