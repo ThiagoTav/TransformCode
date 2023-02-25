@@ -16,6 +16,7 @@ var content_user = document.getElementById('content');
 var section = document.getElementById('textInput');
 var page1= document.getElementById('page1');
 
+
 //Ocultar page2 quando a tela carregar
 page2.style.display = "none";
 
@@ -62,4 +63,9 @@ function retornar(){
   
 
 }
+var btn2 = document.getElementById("btGerar2")
+btn2.addEventListener("click", barra)
 
+function barra(){
+  window.scroll(0,410)
+}
