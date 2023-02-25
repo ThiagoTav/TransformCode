@@ -115,6 +115,10 @@ header h2:hover{
     font-size: 25px;
     line-height: 37px;
     padding-bottom: 4%;
+    transition: 0.3s;
+}
+.escrita:hover{
+    opacity: 0;
 }
 .li1{
     padding-left: 120px;
@@ -182,6 +186,11 @@ h2{
     color: white;
     line-height: 24px;
    
+}
+.botao{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 #textInput{
     padding-top: 5%;
