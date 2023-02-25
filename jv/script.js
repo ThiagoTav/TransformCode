@@ -5,6 +5,7 @@ const btn = document.getElementById('darkMode')
 
 btn.onclick = function(){
   html.classList.toggle('active')
+  this.classList.toggle('active')
   body.classList.toggle('active')
 }
 
