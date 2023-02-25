@@ -108,8 +108,80 @@ header h2:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
+}
+.escrita{
+    color: white;
+    font-size: 25px;
+    line-height: 37px;
+    padding-bottom: 4%;
+}
+.li1{
+    padding-left: 120px;
+}
+.li2{
+    padding-left: 457px;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.conteudo:hover{
+    opacity: 1;
+}
+.imagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.galeria{
+    display: flex;
+    gap: 30px;
+}
+.gallery {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    width: auto;
+}
+.gallery:hover {
+    border: 2px solid #fffefe;
+}
+.gallery img {
+    width: auto;
+    height: 200px;
+}
+.desc {
+    background-color: #D9D9D9;
+    color: black;
+    padding: 3px;
+    text-align: center;
+}
+.TagsCompativeis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    padding-bottom: 20px;
+    color:  rgba(255, 255, 255, 1);
+}
+.conteudoTexto{
+    width: 400px;
+    min-height: 185px;
+    height: auto;
+    background-color: #504D4D;
+    box-shadow: -3px 6px 4px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    line-height: 24px;
+   
 }
 #textInput{
     padding-top: 5%;
