@@ -9,6 +9,19 @@ btn.onclick = function(){
   body.classList.toggle('active')
 }
 
+//Lógica por horário
+var data = new Date();
+var horas = data.getHours();
+
+console.log(horas);
+
+window.addEventListener("load", function () {
+  if (horas < 18) {
+    html.classList.toggle("whiteMode");
+    body.classList.toggle("whiteMode");
+  }
+});
+
 //declaração de variáveis para controle das pages
 var btn_gerar = document.getElementById('btGerar');
 var btn_voltar = document.getElementById('btVoltarDefault');
