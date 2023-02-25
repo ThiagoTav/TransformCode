@@ -35,7 +35,8 @@
     --footer: linear-gradient(180.09deg, rgba(127, 163, 197, 0) 0.93%,  rgba(93, 166, 251, 0.60) 150.53%);
 }
 body{
-    background: var(--fundo); 
+    background: var(--fundo);
+    scroll-behavior: smooth;
 }
 #page1{
     display: flex;
@@ -260,6 +261,30 @@ textarea:hover{
     border: none;
 }
 #btGerar:hover{
+    transform: scale(110%);
+    color: white;
+    background-image: var(--efeitobotao);
+}
+
+#btGerar2{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background: var(--botao);
+    color: var(--textbotao);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: 1%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+
+#btGerar2:hover{
     transform: scale(110%);
     color: white;
     background-image: var(--efeitobotao);
