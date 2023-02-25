@@ -15,27 +15,13 @@ var page2 = document.getElementById('page2');
 var content_user = document.getElementById('content');
 var section = document.getElementById('textInput');
 var page1= document.getElementById('page1');
-/*
-//declaração de variáveis para controle da seção introdução
-var informacoesImagens = document.getElementsByClassName('conteudo')[0]
-var enunciado = document.getElementsByClassName('escrita')[0]
-var btComecar = document.getElementById('btGerar2');
-
-//Ocultar a seção com os modelos
-informacoesImagens.style.display = "none";
-//Monitorar bt gerar para mexer com as seções
-btComecar.addEventListener("mouseover", aparecerModelos)
-
-function aparecerModelos(){
-  enunciado.style.display = "none"
-  informacoesImagens.style.display = "flex"
-}*/
 
 //Ocultar page2 quando a tela carregar
 page2.style.display = "none";
 
 //Monitoramento dos botões
 btn_gerar.addEventListener("click", gerar);
+btn_voltar.addEventListener("mouseover", linkar);
 btn_voltar.addEventListener("click", retornar);
 
 //funções
@@ -74,6 +60,10 @@ function retornar(){
   page2.style.display = "none";
   //Mostra page1
   page1.style.display = "flex";
-  
-
+ 
+}
+function linkar(){
+    //Forma mais avançada
+    let tagA = document.getElementById('a');
+    tagA.setAttribute("href","#textInput"); 
 }
