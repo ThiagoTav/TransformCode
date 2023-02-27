@@ -10,6 +10,7 @@
   font-weight: var(--peso);
 }
 :root {
+  --btBlackWhiteColor: #2196F3;
   --fundo: linear-gradient(241.29deg, #4d4a50 10.31%, #1a1919 93.41%);
   --texto: white;
   --botao: linear-gradient(
@@ -23,7 +24,9 @@
   --peso: 500;
 }
 
-.whiteMode:root {
+.WhiteMode:root {
+  --btBlackWhiteBorder:  2.7px solid #000000;
+  --btBlackWhiteColor: rgb(65, 65, 65);
   --fundo: linear-gradient(232.73deg, #fbfbfb 8.79%, #bebebe 84.88%);
   --texto: rgb(0, 0, 0);
   --botao: linear-gradient(
@@ -46,42 +49,49 @@
   border-radius: 0;
   border: 0;
 }
-.btnDefault{
-  position: absolute;
-  left: 15px;
-  top: 80px;
-  width: 60px;
-  height: 29px;
-  border: 2.6px solid #ffffff;
-  border-radius: 60px;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-.btnDefault::before{
-  content: ' ';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  top: 51%;
-  left: 2.3px;
-  transform: translateY(-50%);
-  transition: left .5s;
-}
-
-.btnDefault.active::before{
-  left:34px;
-  background-color: black;
-}
-
-.btnDefault.active{
-  border: 2.6px solid #000000;
-}
-
-
 #btVoltarDefault:hover{
   color: black;
+}
+.switchBlackWhite {
+  position: absolute;
+  left: 15px;
+  top: 70px;
+  display: inline-block;
+  width: 30px;
+  height: 34px;
+}
+/* The slider */
+.slider0 {
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--btBlackWhiteColor);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider0:before { /* Círculo Interno */
+  border-radius: 70%;
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 10px;
+  bottom: 7px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.checkbox0:checked + .slider0 { /*Quando for clicado, mudar a cor do slides*/
+  background-color: var(--btBlackWhiteColor);
+}
+.checkbox0:checked + .slider0:before { /*Quando for clicado, mudar a posição da círculo*/
+  -webkit-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  transform: translateX(50px);
 }
 body{
   display: flex;
@@ -173,6 +183,7 @@ main{
   color: white;
   font-weight: 500;
   cursor: pointer;
+  border: none;
 
 }
 #btnCalcular,button:hover{
@@ -191,7 +202,6 @@ main{
   background: var(--botao);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
-  border-style: none;
   transition: 0.2s;
   color: white;
   font-weight: 500;
@@ -213,3 +223,5 @@ section{
   margin-top: 8%;
   gap: 30px;
 }
+
+

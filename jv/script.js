@@ -1,26 +1,33 @@
 //Lógica Black and White
+//Variáveis 
 const html = document.querySelector("html");
 const body = document.querySelector("body");
-const btn = document.getElementById('darkMode')
+const btn_blackWhite = document.getElementById("darkMode");
 
-btn.onclick = function(){
-  html.classList.toggle('active')
-  this.classList.toggle('active')
-  body.classList.toggle('active')
-}
 
-//Lógica por horário
+//Monitoramento de eventos
+window.addEventListener("load", mudarPorHorario) //Lógica por horário 
+btn_blackWhite.addEventListener("click", mudarPorBotao) //Lógica por Botao
+
+//Funções 
+//Função lógica por horário
 var data = new Date();
 var horas = data.getHours();
-
 console.log(horas);
 
-window.addEventListener("load", function () {
+function mudarPorHorario() {
   if (horas < 18) {
-    html.classList.toggle("whiteMode");
-    body.classList.toggle("whiteMode");
+    html.classList.toggle('WhiteMode');
+    body.classList.toggle('WhiteMode');
   }
-});
+};
+
+//Função botão 
+function mudarPorBotao(){
+  html.classList.toggle('WhiteMode')
+  body.classList.toggle('WhiteMode')
+  this.classList.toggle('changed') //Mudar a classe no botao
+}
 
 //declaração de variáveis para controle das pages
 var btn_gerar = document.getElementById('btGerar');
@@ -35,7 +42,6 @@ page2.style.display = "none";
 
 //Monitoramento dos botões
 btn_gerar.addEventListener("click", gerar);
-
 btn_voltar.addEventListener("click", retornar);
 
 //funções
@@ -61,8 +67,8 @@ tagScript.appendChild(textScript)
 document.body.appendChild(tagScript)
 
 //teste console
-console.log(content)
-console.log(scripts)
+console.log(content_html)
+console.log(content_js)
 }
 
 //Função do botão voltar 
@@ -76,6 +82,4 @@ function retornar(){
    //Ocultar page 2
   page2.style.display = "none";
   
-  
-
 }

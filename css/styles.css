@@ -6,11 +6,11 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-.btnDefault{
+.btnDefault{ /*Estilização da borda*/
     margin-left: 10%;
     width: 60px;
     height: 29px;
-    border: 2.6px solid #ffffff;
+    border: var(--btBlackWhiteBorder);
     border-radius: 60px;
     position: relative;
     cursor: pointer;
@@ -18,29 +18,28 @@
     left: 10px;
     transition: all 0.5s;
 }
-
-.btnDefault::before{
+.btnDefault::before{ /*Estilização da bola interna*/
     content: ' ';
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: #ffffff;
+    background-color: var(--btBlackWhiteColor);
     border-radius: 50%;
-    top: 51%;
+    top: 50%;
     left: 2.3px;
     transform: translateY(-50%);
     transition: left .5s;
 }
-
-.btnDefault.active::before{
-    left:34px;
-    background-color: black;
+.btnDefault.changed::before{
+    left:32px;
+    background-color: var(--btBlackWhiteColor);
 }
-
-.btnDefault.active{
-    border: 2.6px solid #000000;
+.btnDefault.changed{
+    border: var(--btBlackWhiteBorder);
 }
 :root {
+    --btBlackWhiteBorder:  2.6px solid #ffffff;
+    --btBlackWhiteColor: white;
     --header:  #4e4e50;
     --navfundo: #48484a;
     --navshadow: -2px 5px 25px -10px #E85582;
@@ -57,7 +56,9 @@
     --textbotao: white;
     --footer:  linear-gradient(180.09deg, rgba(108, 70, 131, 0) 0.93%, #C366FF 150.53%);
 }
-.active:root {
+.WhiteMode:root {
+    --btBlackWhiteBorder:  2.7px solid #000000;
+    --btBlackWhiteColor: black;
     --header:  #e5e7f0;
     --navfundo:  #cfd1db;
     --navshadow: -2px 5px 13px -0px #8ebaf1;
