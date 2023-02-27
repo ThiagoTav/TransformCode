@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-.btnDefault{ /*Estilização da borda*/
+.btnTema{ /*Estilização da borda*/
     margin-left: 10%;
     width: 60px;
     height: 29px;
@@ -18,7 +18,7 @@
     left: 10px;
     transition: all 0.5s;
 }
-.btnDefault::before{ /*Estilização da bola interna*/
+.btnTema::before{ /*Estilização da bola interna*/
     content: ' ';
     position: absolute;
     width: 20px;
@@ -30,11 +30,11 @@
     transform: translateY(-50%);
     transition: left .5s;
 }
-.btnDefault.changed::before{
+.btnTema.changed::before{
     left:32px;
     background-color: var(--btBlackWhiteColor);
 }
-.btnDefault.changed{
+.btnTema.changed{
     border: var(--btBlackWhiteBorder);
 }
 :root {
@@ -60,7 +60,7 @@
     --btBlackWhiteBorder:  2.7px solid #000000;
     --btBlackWhiteColor: black;
     --header:  #e5e7f0;
-    --navfundo:  #cfd1db;
+    --navfundo:  #d7d9e0;
     --navshadow: -2px 5px 13px -0px #8ebaf1;
     --fundo:  linear-gradient(232.73deg, #cec8c8 0.88%, #e8e3e3 8.79%, #d8d4d4 90.88%);
     --galeriaColor: rgb(158, 195, 239);
@@ -132,7 +132,7 @@ header h2:hover{
 }
 a {
     text-decoration: none;
-    color: white;
+    color: var(--texto);
 }
 
 nav li:hover {
@@ -148,36 +148,8 @@ nav{                     /*alt*/
 }
 nav li{
     cursor: pointer;
-    color: var(--texto);
     transition: 0.2s;
     
-}
-
-.btn{
-    width: 70px;
-    height: 30px;
-    border: 4px solid#000000;
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
-    left: 10%;
-    top: 45%;
-}
-
-.btn:before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #000000;
-    border-radius: 50%;
-    top: 50%;
-    left: 1.5px;
-    transform: translateY(-10px);
-}
-
-.btn.active:root:before{
-    left: 115px;
 }
 #introducao{
     padding-top: 5%;

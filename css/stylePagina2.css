@@ -52,7 +52,7 @@
 #btVoltarDefault:hover{
   color: black;
 }
-.switchBlackWhite {
+.switchTema {
   position: absolute;
   left: 15px;
   top: 70px;
@@ -73,6 +73,12 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
+/* Hide default HTML checkbox */
+.switchTema input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 .slider0:before { /* Círculo Interno */
   border-radius: 70%;
   position: absolute;
@@ -85,7 +91,7 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-.checkbox0:checked + .slider0 { /*Quando for clicado, mudar a cor do slides*/
+.checkbox0:checked + .slider0 { /*Quando for clicado, mudar a cor do slider*/
   background-color: var(--btBlackWhiteColor);
 }
 .checkbox0:checked + .slider0:before { /*Quando for clicado, mudar a posição da círculo*/
