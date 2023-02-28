@@ -175,7 +175,7 @@ main{
   align-self: center;
 
 }
-#btnCalcular, button {
+#btnCalcular,button,input[type=button]{
   width: 120px;
   height: 40px;
   display: flex;
@@ -192,13 +192,13 @@ main{
   border: none;
 
 }
-#btnCalcular,button:hover{
+#btnCalcular:hover,button:hover, input[type=button]:hover{
   transform: scale(110%);
 }
 #btnSomar,
 #btnSub,
 #btnMult,
-#btnDiv {
+#btnDiv,input[type=button] {
   width: 60px;
   height: 60px;
   display: flex;
