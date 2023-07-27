@@ -51,6 +51,7 @@
     --textareahover: 5px 3px 14px rgba(223, 20, 158, 0.559);
     --texto: white;
     --texth1: rgb(249, 249, 249);
+    --btLimparCor: linear-gradient(179.16deg, #DD61D1 0.72%, rgba(244, 188, 148, 0.0572917) 142.27%, rgba(209, 44, 173, 0.0677083) 150.86%, rgba(255, 116, 116, 0) 150.88%);
     --botao: linear-gradient(257.91deg,#c366ff 17.54%,#d37fc8 54.55%,#e95582 72.93%);
     --efeitobotao: url(/img/botãoBlack.gif);
     --textbotao: white;
@@ -59,17 +60,18 @@
 .WhiteMode:root {
     --btBlackWhiteBorder:  2.7px solid #000000;
     --btBlackWhiteColor: black;
-    --header:  #e5e7f0;
-    --navfundo:  #d7d9e0;
+    --header:  rgba(210, 210, 210, 1);
+    --navfundo:  rgba(164, 167, 168, 0.5);
     --navshadow: -2px 5px 13px -0px #8ebaf1;
     --fundo:  linear-gradient(232.73deg, #cec8c8 0.88%, #e8e3e3 8.79%, #d8d4d4 90.88%);
-    --galeriaColor: rgb(158, 195, 239);
+    --galeriaColor: rgb(48, 128, 249);
     --divTag: rgba(100, 147, 185, 0.806);
     --textarea: #d8d9e0;
     --textareabottom:#4C737B;
     --textareahover: 5px 7px 20px #4C737B ;
     --texto: black;
     --texth1:  #290A81 ;
+    --btLimparCor: linear-gradient(179.16deg, #57BBF3 0.72%, rgba(244, 188, 148, 0.0572917) 142.27%, rgba(209, 44, 173, 0.0677083) 150.86%, rgba(116, 205, 255, 0) 150.88%);
     --botao: linear-gradient(260.02deg,#b4c7dd -4.36%,#3f87dd -4.35%,#83b6f4 45.09%,#86bcfc 59.75%);
     --efeitobotao: url(/img/Massive-Galaxy.gif);
     --textbotao: #291854;
@@ -112,7 +114,7 @@ header h2 {
     color: var(--texto);
     padding-top: 10px;
     margin-left: 220px;
-    font-size: 22px;
+    font-size: 2vw;
     transition: 0.2s;
 }
 header h2:hover{
@@ -127,8 +129,6 @@ header h2:hover{
     justify-content: space-around;
     padding: 10px;
     text-decoration: none;
-    
-    
 }
 a {
     text-decoration: none;
@@ -175,11 +175,11 @@ nav li{
     width: 50%;
 }
 .li1{
-    padding-left: 110px;
+    padding-left: 5vw;
     color: var(--texto);
 }
 .li2{
-    padding-left: 180px;
+    padding-left: 12vw;
     color: var(--texto);
 }
 .conteudo{
@@ -204,6 +204,7 @@ nav li{
     justify-content: center;
     border: 3px solid var(--galeriaColor);
     width: auto;
+    box-shadow: 3px 3px 7px #6d6d6d;
 }
 .gallery:hover {
     box-shadow: var(--textareahover);
@@ -241,7 +242,6 @@ h2{
     line-height: 24px;
    
 }
-
 #textInput{
     padding-top: 5%;
     display: flex;
@@ -249,7 +249,7 @@ h2{
     align-items: center;
     width: 100%;
     gap: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 3vh;
 }
 .texthtml{
     color: var(--texto);
@@ -293,12 +293,18 @@ textarea:hover{
     transform: scale(105%);
     box-shadow:  var(--textareahover);
 }
+#buttonsLimpar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5vh;
+    gap: 30vw;
+}
 #button{
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 5vh;
 }
-#btGerar{
+#btGerar, input[type=button]{
     width: 200px;
     height: 60px;
     display: flex;
@@ -315,9 +321,16 @@ textarea:hover{
     transition: 0.2s;
     border: none;
 }
-#btGerar:hover{
+#btGerar:hover,input[type=button]:hover{
     transform: scale(110%);
     color: white;
+}
+#btLimparHtml, #btLimparJs{
+    width: 200px;
+    height: 35px;
+    border-radius: 0;
+    font-size: 1rem;
+    background: var(--btLimparCor);
 }
 #btGerar2{
     width: 200px;
@@ -337,23 +350,15 @@ textarea:hover{
     border: none;
     
 }
-
 #btGerar2:hover{
     transform: scale(110%);
     color: white;
     background-image: var(--efeitobotao);
 }
 a:link { text-decoration: none; }
-
-
 a:visited { text-decoration: none; }
-
-
 a:hover { text-decoration: none; }
-
-
 a:active { text-decoration: none; }
-
 footer {
     display: flex;
     background: var(--footer);
